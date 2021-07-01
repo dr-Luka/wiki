@@ -1,0 +1,190 @@
+/* ---------- Global ---------- */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  height: 100%;
+  background: linear-gradient(0deg, white, rgba(162, 227, 255, 0.4) 100%)
+    no-repeat;
+}
+/* ---------- Nav ---------- */
+
+nav {
+  background-color: rgba(162, 227, 255, 0.4);
+  padding: 10px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  width: 70px;
+  text-align: center;
+}
+.fas {
+  font-size: 7vw;
+}
+.nav-name {
+  font-size: 7vw;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.home-button {
+  font-size: 5vw;
+}
+.current {
+  text-decoration: underline;
+}
+/* ---------- Footer ---------- */
+
+footer {
+  margin-top: auto;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(162, 227, 255, 0.5);
+}
+/* ---------- Homepage ---------- */
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin: 50px 0px 15px;
+  font-size: 3em;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.post {
+  display: flex;
+  margin: 0% 5%;
+  padding: 10px 20px;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid black;
+  font-size: 1.2em;
+}
+h3 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+.post-description {
+  font-family: "Montserrat", sans-serif;
+  max-width: 80%;
+}
+.post-button {
+  min-width: 100px;
+  min-height: 30px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 0px;
+  background-color: rgb(164, 232, 174);
+}
+.post-info {
+  margin: 20px 0px;
+}
+
+/* ---------- Login ---------- */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 250px;
+}
+
+.login-form input {
+  height: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+  border: 1px solid rgb(164, 232, 174);
+  border-radius: 5px;
+}
+.login-button {
+  margin: 20px auto;
+  padding: 10px 30px;
+  background-color: rgb(164, 232, 174);
+
+  border-radius: 5px;
+}
+/* ---------- Control Panel ---------- */
+.add-button {
+  display: inline-block;
+  margin: 0px auto;
+  padding: 10px 30px;
+  background-color: rgb(164, 232, 174);
+  border: 0px;
+  border-radius: 5px;
+  width: 150px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.logout-button {
+  display: inline-block;
+  margin: 0px auto;
+  padding: 10px 30px;
+  background-color: rgb(218, 83, 83);
+  border: 0px;
+  border-radius: 5px;
+  width: 150px;
+}
+.panel-buttons {
+  width: 350px;
+  margin: 0px auto;
+  text-align: center;
+}
+/* ---------- Add Form ---------- */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.form-input {
+  width: 85%;
+  max-width: 500px;
+  margin: 5px auto;
+  padding: 10px;
+}
+#description {
+  height: 100px;
+  font-family: "Montserrat", sans-serif;
+}
+#example {
+  height: 150px;
+  margin-bottom: 20px;
+}
+#title {
+  font-family: "Montserrat", sans-serif;
+}
+.publish {
+  margin-bottom: 50px;
+}
+
+/* ---------- Media Querry ---------- */
+
+@media only screen and (min-width: 750px) {
+  .nav-name {
+    font-size: 3em;
+  }
+  .home-button {
+    font-size: 2em;
+  }
+  .fas {
+    font-size: 2.5em;
+  }
+}
