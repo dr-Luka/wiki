@@ -15,6 +15,7 @@
       crossorigin="anonymous"
     ></script>
     <link href="styles/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.png" />
     <title>Code Wiki</title>
   </head>
   <body>
@@ -22,23 +23,19 @@
       <div class="nav-links">
         <a href="index.html" class="home-button">Home</a>
       </div>
-      <div class="nav-name">Code-Wiki</div>
+      <a href="index.html" class="home-button"
+        ><div class="nav-name">Code-Wiki</div></a
+      >
       <div class="nav-links account-link"></div>
     </nav>
     <main>
-      <h1>Admin</h1>
-      <h2>Add New Post</h2>
+      <h1>Add New Post</h1>
       <form>
         <input type="text" placeholder="Title" id="title" class="form-input" />
         <textarea
-          id="description"
+          id="content"
           class="form-input"
-          placeholder="Description"
-        ></textarea>
-        <textarea
-          id="example"
-          placeholder="Example"
-          class="form-input"
+          placeholder="Content"
         ></textarea>
         <button type="submit" class="add-button publish">Publish</button>
       </form>
@@ -49,6 +46,6 @@
         projects
       </div>
     </footer>
-    <script src="./scripts/admin/add.js" type="module"></script>
+    <script src="./scripts/add.js" type="module"></script>
   </body>
 </html>

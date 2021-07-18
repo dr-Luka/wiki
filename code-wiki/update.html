@@ -29,22 +29,26 @@
       <div class="nav-links account-link"></div>
     </nav>
     <main>
-      <div class="header">
-        <h1>Account</h1>
-        <h2>Login</h2>
-        <div class="login-form">
-          <input type="text" placeholder="Username" id="username" />
-          <input type="password" placeholder="Password" id="password" />
-          <button type="button" class="login-button">Log In</button>
-        </div>
-      </div>
+      <h1>Admin</h1>
+      <h2>Update Post</h2>
+
+      <form>
+        <input type="text" placeholder="Title" id="title" class="form-input" />
+        <textarea
+          id="content"
+          class="form-input"
+          placeholder="Content"
+        ></textarea>
+        <input id="id" type="hidden" />
+        <button type="submit" class="add-button updateButton">Update</button>
+      </form>
     </main>
     <footer>
       <div>
-        visit <a href="https://learnx.no" class="current"><b>LearnX</b></a> for
-        more projects
+        visit <a href="https://learnx.no" class="current">LearnX</a> for more
+        projects
       </div>
     </footer>
-    <script src="scripts/components/login.js" type="module"></script>
+    <script src="./scripts/update.js" type="module"></script>
   </body>
 </html>

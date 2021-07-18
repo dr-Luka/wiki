@@ -1,4 +1,5 @@
 export const baseUrl = "https://wiki.learnx.no";
+
 const tokenKey = "token";
 const userKey = "user";
 

@@ -4,25 +4,33 @@
   margin: 0px;
 }
 body {
+  height: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  opacity: 1;
+  background-image: radial-gradient(#444cf7 0.5px, #efeff4df 0.5px);
+  background-size: 10px 10px;
 }
-main {
-  height: 100%;
-  background: linear-gradient(0deg, white, rgba(162, 227, 255, 0.4) 100%)
-    no-repeat;
+.header {
+  background-color: #fbf7f7;
+  max-width: 95%;
+  margin: 10px auto 0px auto;
+  padding: 40px 0px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 5px rgb(140, 50, 185);
 }
 /* ---------- Nav ---------- */
 
 nav {
-  background-color: rgba(162, 227, 255, 0.4);
   padding: 10px 20px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 20px 0px rgba(162, 227, 255, 0.7);
 }
 .nav-links {
   width: 70px;
@@ -41,6 +49,10 @@ a {
 .home-button {
   font-size: 5vw;
 }
+.home-button:hover {
+  border-bottom: 5px solid rgb(164, 232, 174);
+  transition: 0.2s;
+}
 .current {
   text-decoration: underline;
 }
@@ -51,53 +63,58 @@ footer {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   padding: 10px;
-  box-shadow: 0px 0px 10px 0px rgba(162, 227, 255, 0.5);
+  box-shadow: 0px 0px 20px 0px rgba(162, 227, 255, 0.7);
+  background-color: rgb(197, 234, 250);
 }
 /* ---------- Homepage ---------- */
-
+.welcome {
+  margin: 30px 0px 80px;
+}
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   text-align: center;
-  margin: 50px 0px 15px;
-  font-size: 3em;
+  margin-bottom: 15px;
+  font-size: 2.5m;
 }
 h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
   text-align: center;
-  margin-bottom: 40px;
+  margin: 15px 0px 15px 0px;
 }
 .post {
-  display: flex;
-  margin: 0% 5%;
-  padding: 10px 20px;
-  justify-content: space-around;
-  align-items: center;
-  border-top: 1px solid black;
+  margin: 10px;
   font-size: 1.2em;
 }
-h3 {
-  font-family: "Roboto", sans-serif;
-  margin-bottom: 10px;
-  font-size: 1.3em;
-}
-.post-description {
-  font-family: "Montserrat", sans-serif;
-  max-width: 80%;
-}
-.post-button {
-  min-width: 100px;
-  min-height: 30px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: 0px;
-  background-color: rgb(164, 232, 174);
-}
 .post-info {
-  margin: 20px 0px;
+  border: 1px solid black;
+  background-color: rgb(238, 205, 205);
+  font-weight: 400;
 }
-
+h3 {
+  font-family: "Montserrat", sans-serif;
+  margin: 50px 0px 20px 0px;
+  font-size: 1.8em;
+  text-decoration: underline;
+  text-align: center;
+}
+.post-content {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  background-color: rgb(245, 234, 234);
+  color: rgb(243, 127, 19);
+  border: 1px solid black;
+  padding: 10px 0px 10px 5px;
+  font-size: 0.8em;
+}
+#search {
+  display: block;
+  margin: 0px auto;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
 /* ---------- Login ---------- */
 .login-form {
   display: flex;
@@ -106,66 +123,102 @@ h3 {
   width: 250px;
 }
 
+/* ------------------------------------------------------SREDITI LOGIN-----------*/
+
 .login-form input {
   height: 40px;
   margin-bottom: 10px;
   text-align: center;
-  border: 1px solid rgb(164, 232, 174);
   border-radius: 5px;
 }
 .login-button {
   margin: 20px auto;
   padding: 10px 30px;
   background-color: rgb(164, 232, 174);
-
+  border: 1px solid rgb(139, 228, 152);
   border-radius: 5px;
+}
+.login-button:hover {
+  background-color: rgb(23, 187, 86);
+  transition-duration: 0.3s;
+  color: white;
 }
 /* ---------- Control Panel ---------- */
 .add-button {
   display: inline-block;
   margin: 0px auto;
-  padding: 10px 30px;
+  padding: 10px;
   background-color: rgb(164, 232, 174);
   border: 0px;
   border-radius: 5px;
   width: 150px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  font-size: 0.8em;
 }
 .logout-button {
   display: inline-block;
   margin: 0px auto;
-  padding: 10px 30px;
+  padding: 10px;
   background-color: rgb(218, 83, 83);
   border: 0px;
   border-radius: 5px;
   width: 150px;
+  font-size: 0.8em;
 }
 .panel-buttons {
-  width: 350px;
-  margin: 0px auto;
+  max-width: 370px;
+  margin: 30px auto 10px auto;
   text-align: center;
+  font-size: 1.5em;
+}
+.panel-post {
+  border-top: 1px solid black;
+  margin: 0% 5%;
+  display: flex;
+  /* justify-content: space-between; */
+}
+.panel-post-title {
+  width: 50%;
+  align-self: center;
+}
+
+.manageButton {
+  display: inline-block;
+  border: 0px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 1.3em;
+  width: 90px;
+}
+.manageButtonsContainer {
+  max-width: 300px;
+  margin: 20px auto 20px auto;
+  text-align: center;
+  width: 50%;
+}
+.deleteButton {
+  background-color: rgb(218, 83, 83);
+  margin: 5px 0px 5px 0px;
+}
+.editButton {
+  background-color: rgb(220, 210, 99);
 }
 /* ---------- Add Form ---------- */
 form {
   display: flex;
   flex-direction: column;
-  width: 85%;
-  max-width: 500px;
   margin: 0 auto;
 }
 .form-input {
   width: 85%;
-  max-width: 500px;
+  max-width: 700px;
   margin: 5px auto;
   padding: 10px;
 }
-#description {
-  height: 100px;
-  font-family: "Montserrat", sans-serif;
-}
-#example {
+#content {
   height: 150px;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 20px;
 }
 #title {
@@ -174,17 +227,31 @@ form {
 .publish {
   margin-bottom: 50px;
 }
+/* ---------- Update ---------- */
+.updateButton {
+  margin-bottom: 100px;
+}
 
 /* ---------- Media Querry ---------- */
 
 @media only screen and (min-width: 750px) {
   .nav-name {
-    font-size: 3em;
+    font-size: 2em;
   }
   .home-button {
     font-size: 2em;
   }
   .fas {
     font-size: 2.5em;
+  }
+  .post-button {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+  .post {
+    margin: 2vw 4vw;
+  }
+  .heading {
+    width: 500px;
   }
 }
