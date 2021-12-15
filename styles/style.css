@@ -94,9 +94,7 @@ h2 {
 }
 .post-info {
   border: 1px solid black;
-  /* background-color: rgb(238, 205, 205); */
-  background-color: blue;
-
+  background-color: rgb(238, 205, 205);
   font-weight: 400;
 }
 h3 {
