@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8fb69c8abe.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="styles/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.png" />
+    <title>Code Wiki</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-links">
+        <a href="index.html" class="home-button">Home</a>
+      </div>
+      <a href="index.html" class="home-button"
+        ><div class="nav-name">Code-Wiki</div></a
+      >
+      <div class="nav-links account-link"></div>
+    </nav>
+    <main>
+      <h1>Admin</h1>
+      <h2>Update Post</h2>
+
+      <form>
+        <input type="text" placeholder="Title" id="title" class="form-input" />
+        <textarea
+          id="content"
+          class="form-input"
+          placeholder="Content"
+        ></textarea>
+        <input id="id" type="hidden" />
+        <button type="submit" class="add-button updateButton">Update</button>
+      </form>
+    </main>
+    <footer>
+      <div>
+        visit <a href="https://learnx.no" class="current">LearnX</a> for more
+        projects
+      </div>
+    </footer>
+    <script src="./scripts/update.js" type="module"></script>
+  </body>
+</html>
